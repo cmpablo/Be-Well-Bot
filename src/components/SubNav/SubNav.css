@@ -1,0 +1,29 @@
+#subNav {
+  background-color: #51ACCC;
+  height: 60px;
+  z-index: 90;
+  position: fixed;
+  top: 80px;
+  width: 100%;
+}
+
+.nav-link {
+  padding: 10px 5px;
+}
+
+li {
+  float: left;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  padding: 0;
+}
+
+a {
+  display: block;
+  color: rgb(255, 255, 255);
+}
+
+.navbar-brand {
+  padding: 0;
+}

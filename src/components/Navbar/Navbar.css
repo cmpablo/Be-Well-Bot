@@ -2,17 +2,18 @@ nav.navbar.navbar-default {
   margin-bottom: 0;
 }
 
-.navbar {
-  background-color: rgb(231, 244, 255);
-  box-shadow: 0 1px 2px #51ACCC;
+.mainNav {
+  background-color: #336C7F;
+  height: 80px;
+  z-index: 100;
+  box-shadow: 0 1px 2px rgb(41, 55, 59);
 }
 
-.nav-link {
-  padding: 10px 5px;
-}
+/* .nav-link {
+  padding: 5px;
+} */
 
 li {
-  float: left;
   font-family: 'Work Sans', sans-serif;
   font-weight: 500;
   line-height: 1.6;
@@ -21,9 +22,9 @@ li {
 
 a {
   display: block;
-  color: #59757F;
+  color: rgb(255, 255, 255);
 }
 
-.navbar-brand {
-  padding: 0;
+#logo {
+  width: 75%;
 }
