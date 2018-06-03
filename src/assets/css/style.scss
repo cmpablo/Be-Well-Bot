@@ -6,4 +6,34 @@
 
 body {
   font-family: $text-font;
+  color: $body-text-color;
+}
+
+h1 {
+  @include center-text;
+  font-family: $headline-font;
+}
+
+h2, h3, h4, h5 {
+  @include center-text;
+  @include content-margins;
+  font-family: $headline-font;
+}
+
+p {
+  @include default-body-text;
+  @include left-justify-text;
+  font-family: $text-font;
+}
+
+.button {
+  @include button-style;
+}
+
+.button:hover {
+  @include button-hover;
+}
+
+label {
+  @include content-margins;
 }

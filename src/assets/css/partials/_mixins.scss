@@ -2,3 +2,44 @@
   $font: unquote($font);
   @import url(https://fonts.googleapis.com/css?family=#{$font});
 }
+
+@mixin center-text {
+  text-align: center;
+}
+
+@mixin left-justify-text {
+  text-align: left;
+}
+
+@mixin default-body-text {
+  font: {
+    size: 18px;
+  }
+  line-height: 1.6;
+}
+
+@mixin content-margins {
+  margin: 20px auto 0 auto;
+}
+
+@mixin button-style {
+  background-color: $btn-color;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px auto;
+  padding: 10px 20px;
+  float: right;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+@mixin button-hover {
+  background-color: $btn-hover-color;
+  color: white;
+}
