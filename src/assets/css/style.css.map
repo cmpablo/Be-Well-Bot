@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AEEE,OAAO,CAAC,sDAAI;AAAZ,OAAO,CAAC,6DAAI;AFId,AAAA,IAAI,CAAC;EACH,WAAW,ECDD,WAAW,EAAE,UAAU;CDElC",
+    "sources": [
+        "style.scss",
+        "partials/_variables.scss",
+        "partials/_mixins.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}

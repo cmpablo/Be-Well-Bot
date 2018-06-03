@@ -1,0 +1,9 @@
+@import "partials/variables";
+@import "partials/mixins";
+
+@include google-font("Work+Sans");
+@include google-font("Playfair+Display");
+
+body {
+  font-family: $text-font;
+}
