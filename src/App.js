@@ -4,8 +4,9 @@ import { BrowserRouter as Router } from "react-router-dom";
 import './App.css';
 import Wrapper from './components/Wrapper';
 import Navbar from './components/Navbar';
-//import Welcome from './pages/Welcome';
+import Welcome from './pages/Welcome';
 import Signup from './pages/Signup';
+import Login from './pages/Login';
 
 const App = () => (
   <Router>
@@ -14,6 +15,7 @@ const App = () => (
        <Wrapper>
          {/* <Welcome /> */}
           {/* <Signup /> */}
+          {/* <Login /> */}
 
         {/* <Route exact path="/works" component={Works} />
         <Route exact path="/cv" component={Resume} />

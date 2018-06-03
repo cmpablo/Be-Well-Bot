@@ -12,12 +12,14 @@ body {
 h1 {
   @include center-text;
   font-family: $headline-font;
+  color: $header-text-color;
 }
 
 h2, h3, h4, h5 {
   @include center-text;
   @include content-margins;
   font-family: $headline-font;
+  color: $header-text-color;
 }
 
 p {

@@ -8,12 +8,14 @@ body {
 h1 {
   text-align: center;
   font-family: "Playfair Display", serif;
+  color: #51ACCC;
 }
 
 h2, h3, h4, h5 {
   text-align: center;
   margin: 20px auto 0 auto;
   font-family: "Playfair Display", serif;
+  color: #51ACCC;
 }
 
 p {
