@@ -1,9 +1,7 @@
 @import "partials/variables";
 @import "partials/mixins";
-
 @include google-font("Work+Sans");
 @include google-font("Playfair+Display");
-
 body {
   font-family: $text-font;
   color: $body-text-color;
@@ -16,7 +14,10 @@ h1 {
   color: $header-text-color;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
   @include center-text;
   @include content-margins;
   font-family: $headline-font;
@@ -47,3 +48,10 @@ label {
   @include content-margins;
 }
 
+.sesh-times img {
+  @include sesh-style;
+}
+
+.sesh-times:hover {
+  @include image-hover;
+}

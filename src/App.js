@@ -8,7 +8,8 @@ import SubNav from './components/SubNav';
 //import Signup from './pages/Signup';
 //import Login from './pages/Login';
 //import Dashboard from './pages/Dashboard';
-import Menu from './pages/SessionMenu';
+//import Menu from './pages/SessionMenu';
+import SessionDesc from './pages/SessionDesc';
 
 
 const App = () => (
@@ -20,7 +21,8 @@ const App = () => (
           {/* <Signup /> */}
           {/* <Login /> */}
           {/* <Dashboard /> */}
-          <Menu />
+          {/* <Menu /> */}
+          <SessionDesc />
 
         {/* <Route exact path="/works" component={Works} />
         <Route exact path="/cv" component={Resume} />

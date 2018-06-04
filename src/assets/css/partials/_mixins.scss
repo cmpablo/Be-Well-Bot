@@ -33,7 +33,7 @@
   background-color: $btn-color;
   border: none;
   border-radius: 3px;
-  color: white;
+  color: $btn-text-color;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -42,11 +42,20 @@
   padding: 10px 20px;
   float: right;
   cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
+  -webkit-transition-duration: $transition-time; /* Safari */
+  transition-duration: $transition-time;
 }
 
 @mixin button-hover {
   background-color: $btn-hover-color;
-  color: white;
+  color: $btn-text-color;
+}
+
+@mixin sesh-style {
+  display: block;
+  margin: 30px auto 0 auto;
+}
+
+@mixin image-hover {
+  opacity: $img-hover-opacity;
 }
