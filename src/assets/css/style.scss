@@ -23,6 +23,12 @@ h2, h3, h4, h5 {
   color: $header-text-color;
 }
 
+h6 {
+  @include center-text;
+  @include small-body-text;
+  margin: 10px 0;
+}
+
 p {
   @include default-body-text;
   @include left-justify-text;
@@ -40,3 +46,4 @@ p {
 label {
   @include content-margins;
 }
+

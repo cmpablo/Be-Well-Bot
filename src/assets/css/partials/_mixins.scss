@@ -18,6 +18,13 @@
   line-height: 1.6;
 }
 
+@mixin small-body-text {
+  font: {
+    size: 14px;
+  }
+  line-height: 1.6;
+}
+
 @mixin content-margins {
   margin: 20px auto 0 auto;
 }

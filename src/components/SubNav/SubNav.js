@@ -1,32 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import './SubNav.css';
 
-// Depending on the current path, this component sets the 'active' class on the appropriate navigation link item
 const SubNav = props => (
-  <nav className='navbar navbar-expand-sm' id='subNav'>
-    <Link className='navbar-brand' to='/'>
-      {/* <img src={logo} alt='logo' id='logo'/> */}
-    </Link>
-    <div>
-      <ul className='navbar-nav'>
-        <li
-          className={window.location.pathname === '/' || window.location.pathname === '/about' ? 'nav-item active' : 'nav-item'
-          }>
-          <Link to='/' className='nav-link'>
-            {/* Login */}
-          </Link>
-        </li>
-        <li
-          className={window.location.pathname === '/discover' ? 'nav-item active' : 'nav-item'
-          }>
-          <Link to='/discover' className='nav-link'>
-            {/* Sign Up */}
-          </Link>
-        </li>
+  <div className='subNav'>
+      <ul>
+        <li><a href='/'><span className="fas fa-list-ul"></span></a></li>
+        <li><a href='/'><span className="far fa-smile"></span></a></li>
+        <li><a href='/'><span className="fas fa-sign-out-alt"></span></a></li>
       </ul>
-    </div>
-  </nav>
+  </div>
+  
 );
 
 export default SubNav;

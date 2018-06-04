@@ -1,29 +1,35 @@
-#subNav {
+.subNav {
   background-color: #51ACCC;
-  height: 60px;
+  height: 50px;
   z-index: 90;
   position: fixed;
-  top: 80px;
+  top: 78px;
   width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.nav-link {
-  padding: 10px 5px;
+.subNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-li {
+.subNav li {
   float: left;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-  line-height: 1.6;
-  padding: 0;
+  margin: 4px 20px;
+  
 }
 
-a {
+.subNav li a {
   display: block;
-  color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  padding: 0 18px;
+  font-size: 30px;
+  color: rgb(209, 239, 250);
 }
 
-.navbar-brand {
-  padding: 0;
+.subNav li a:hover {
+  background-color: rgb(73, 152, 179);
 }

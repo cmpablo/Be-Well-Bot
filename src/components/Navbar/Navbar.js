@@ -5,12 +5,12 @@ import logo from '../../assets/images/logo_stacked_white.png';
 
 // Depending on the current path, this component sets the 'active' class on the appropriate navigation link item
 const Navbar = props => (
-  <nav className='navbar navbar-expand-lg sticky-top mainNav'>
+  <nav className='navbar sticky-top mainNav'>
     <Link className='navbar-brand' to='/'>
       <img src={logo} alt='logo' id='logo'/>
     </Link>
     <div>
-      <ul className='navbar-nav'>
+      <ul>
         <li
           className={window.location.pathname === '/login' || window.location.pathname === '/about' ? 'nav-item active' : 'nav-item'
           }>

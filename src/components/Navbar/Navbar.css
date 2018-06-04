@@ -1,7 +1,3 @@
-nav.navbar.navbar-default {
-  margin-bottom: 0;
-}
-
 .mainNav {
   background-color: #336C7F;
   height: 80px;
@@ -9,20 +5,29 @@ nav.navbar.navbar-default {
   box-shadow: 0 1px 2px rgb(41, 55, 59);
 }
 
-/* .nav-link {
-  padding: 5px;
-} */
-
-li {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-  line-height: 1.6;
+.mainNav ul {
+  list-style-type: none;
+  margin: 38px 0 0 0;
   padding: 0;
 }
 
-a {
-  display: block;
+.mainNav li {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  display: inline;
+}
+
+.mainNav li a {
+  display: inline;
   color: rgb(255, 255, 255);
+  font-size: 16px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.mainNav li a:hover {
+  color: #B2EBFF;
 }
 
 #logo {

@@ -5,10 +5,10 @@ import './App.css';
 import Wrapper from './components/Wrapper';
 import Navbar from './components/Navbar';
 import SubNav from './components/SubNav';
-//import Welcome from './pages/Welcome';
 //import Signup from './pages/Signup';
 //import Login from './pages/Login';
-import Dashboard from './pages/Dashboard';
+//import Dashboard from './pages/Dashboard';
+import Menu from './pages/SessionMenu';
 
 
 const App = () => (
@@ -17,10 +17,10 @@ const App = () => (
       <Navbar />
       <SubNav />
        <Wrapper>
-         {/* <Welcome /> */}
           {/* <Signup /> */}
           {/* <Login /> */}
-          <Dashboard />
+          {/* <Dashboard /> */}
+          <Menu />
 
         {/* <Route exact path="/works" component={Works} />
         <Route exact path="/cv" component={Resume} />
