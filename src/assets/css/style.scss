@@ -48,10 +48,58 @@ label {
   @include content-margins;
 }
 
+// ===== SESSION MENU BUTTONS =====
+
 .sesh-times img {
   @include sesh-style;
 }
 
 .sesh-times:hover {
   @include image-hover;
+}
+
+// ===== DESCRIPTION PAGE BUTTONS =====
+
+.page-nav-btns {
+  display: flex;
+  justify-content: center;
+  span {
+    font-size: $default-font-size;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    float: left;
+    margin: 4px 20px;
+  }
+  li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: $btn-font-size;
+    color: $btn-color;
+  }
+  li a:hover {
+    color: $btn-hover-color;
+  }
+}
+
+// ===== TIMED SESSION STYLE =====
+
+.sesh-timer {
+  h1 {
+    font-family: $text-font;
+    font-size: 150px;
+    font-weight: bold;
+    margin: -20px 0 0 0;
+  }
+  p {
+    font-size: 30px;
+    margin: -30px 0 0 0;
+    text-align: center;
+  }
 }

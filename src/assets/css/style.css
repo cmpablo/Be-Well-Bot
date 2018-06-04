@@ -37,7 +37,7 @@ p {
 }
 
 .button {
-  background-color: #FF7F9E;
+  background-color: #336C7F;
   border: none;
   border-radius: 3px;
   color: #fff;
@@ -55,7 +55,7 @@ p {
 }
 
 .button:hover {
-  background-color: #df5c7d;
+  background-color: #51ACCC;
   color: #fff;
 }
 
@@ -70,5 +70,51 @@ label {
 
 .sesh-times:hover {
   opacity: 0.7;
+}
+
+.page-nav-btns {
+  display: flex;
+  justify-content: center;
+}
+
+.page-nav-btns span {
+  font-size: 18px;
+}
+
+.page-nav-btns ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-nav-btns li {
+  float: left;
+  margin: 4px 20px;
+}
+
+.page-nav-btns li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 16px;
+  color: #336C7F;
+}
+
+.page-nav-btns li a:hover {
+  color: #51ACCC;
+}
+
+.sesh-timer h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 150px;
+  font-weight: bold;
+  margin: -20px 0 0 0;
+}
+
+.sesh-timer p {
+  font-size: 30px;
+  margin: -30px 0 0 0;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

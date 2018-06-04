@@ -12,19 +12,19 @@ const Menu = () => (
     <h6>Choose a session:</h6>
     <div className='sesh-times'>
       <a href='/'>
-        <img src={fiveMins} alt='5mins' id='image01' />
+        <img src={fiveMins} alt='5mins' />
       </a>
     </div>
 
     <div className='sesh-times'>
       <a href='/'>
-        <img src={tenMins} alt='10mins' id='image02' />
+        <img src={tenMins} alt='10mins' />
       </a>
     </div>
 
       <div className='sesh-times'>
       <a href='/'>
-        <img src={fifteenMins} alt='15mins' id='image03' />
+        <img src={fifteenMins} alt='15mins' />
       </a>
     </div>
   </div>

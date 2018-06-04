@@ -13,16 +13,16 @@
 
 @mixin default-body-text {
   font: {
-    size: 18px;
+    size: $default-font-size;
   }
-  line-height: 1.6;
+  line-height: $default-line-height;
 }
 
 @mixin small-body-text {
   font: {
-    size: 14px;
+    size: $small-font-size;
   }
-  line-height: 1.6;
+  line-height: $default-line-height;
 }
 
 @mixin content-margins {
@@ -37,7 +37,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: $btn-font-size;
   margin: 10px auto;
   padding: 10px 20px;
   float: right;

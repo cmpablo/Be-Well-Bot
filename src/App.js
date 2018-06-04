@@ -9,7 +9,8 @@ import SubNav from './components/SubNav';
 //import Login from './pages/Login';
 //import Dashboard from './pages/Dashboard';
 //import Menu from './pages/SessionMenu';
-import SessionDesc from './pages/SessionDesc';
+//import SessionDesc from './pages/SessionDesc';
+import TimedSession from './pages/SessionTimed';
 
 
 const App = () => (
@@ -22,7 +23,8 @@ const App = () => (
           {/* <Login /> */}
           {/* <Dashboard /> */}
           {/* <Menu /> */}
-          <SessionDesc />
+          {/* <SessionDesc /> */}
+          <TimedSession />
 
         {/* <Route exact path="/works" component={Works} />
         <Route exact path="/cv" component={Resume} />

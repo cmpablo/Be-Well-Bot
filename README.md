@@ -2,7 +2,11 @@
 
 ### What is this?
 
+Be Well Bot is a mobile-first application built in React.
 
+### Who's this for?
+
+Everyone has stress in their life. If you say you don't, you're lying. Be Well Bot is a pocket meditation tool to help with that every day stress.
 
 ### How does it work?
 
