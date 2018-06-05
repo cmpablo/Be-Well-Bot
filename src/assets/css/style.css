@@ -36,6 +36,10 @@ p {
   font-family: "Work Sans", sans-serif;
 }
 
+label {
+  margin: 20px auto 0 auto;
+}
+
 .button {
   background-color: #336C7F;
   border: none;
@@ -59,8 +63,29 @@ p {
   color: #fff;
 }
 
-label {
-  margin: 20px auto 0 auto;
+.timer-btn {
+  background-color: none;
+  border: 1px solid #336C7F;
+  border-radius: 3px;
+  color: #336C7F;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  margin: 15px auto;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+.timer-btn span {
+  font-size: 18px;
+  padding: 2px 5px 0 0;
+}
+
+.timer-btn:hover {
+  background-color: #51ACCC;
+  color: #fff;
 }
 
 .sesh-times img {
@@ -70,6 +95,10 @@ label {
 
 .sesh-times:hover {
   opacity: 0.7;
+}
+
+.sesh-timer hr {
+  margin: 30px 0 20px 0;
 }
 
 .page-nav-btns {
@@ -116,5 +145,9 @@ label {
   font-size: 30px;
   margin: -30px 0 0 0;
   text-align: center;
+}
+
+.exercise-desc h3 {
+  margin: 0 0 10px 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -29,6 +29,7 @@
   margin: 20px auto 0 auto;
 }
 
+// ===== DEFAULT BUTTON STYLE =====
 @mixin button-style {
   background-color: $btn-color;
   border: none;
@@ -51,6 +52,30 @@
   color: $btn-text-color;
 }
 
+// ===== TIMER BUTTON STYLE =====
+
+@mixin timer-btn-style {
+  background-color: none;
+  border: 1px solid $btn-color;
+  border-radius: 3px;
+  color: $btn-color;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: $btn-font-size;
+  margin: 15px auto;
+  padding: 10px 30px;
+  cursor: pointer;
+
+}
+
+@mixin timer-btn-hover {
+  background-color: $btn-hover-color;
+  color: $btn-text-color;
+}
+
+// ===== SESSION MENU STYLE =====
 @mixin sesh-style {
   display: block;
   margin: 30px auto 0 auto;

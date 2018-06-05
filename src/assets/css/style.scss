@@ -36,6 +36,11 @@ p {
   font-family: $text-font;
 }
 
+label {
+  @include content-margins;
+}
+
+// ===== DEFAULT BUTTONS =====
 .button {
   @include button-style;
 }
@@ -44,8 +49,18 @@ p {
   @include button-hover;
 }
 
-label {
-  @include content-margins;
+//===== TIMER BUTTON =====
+
+.timer-btn {
+  @include timer-btn-style;
+  span {
+    font-size: $default-font-size;
+    padding: 2px 5px 0 0;
+  }
+}
+
+.timer-btn:hover {
+@include timer-btn-hover;
 }
 
 // ===== SESSION MENU BUTTONS =====
@@ -56,6 +71,10 @@ label {
 
 .sesh-times:hover {
   @include image-hover;
+}
+
+.sesh-timer hr {
+  margin: 30px 0 20px 0;
 }
 
 // ===== DESCRIPTION PAGE BUTTONS =====
@@ -101,5 +120,11 @@ label {
     font-size: 30px;
     margin: -30px 0 0 0;
     text-align: center;
+  }
+} 
+
+.exercise-desc {
+  h3 {
+  margin: 0 0 10px 0;
   }
 }
