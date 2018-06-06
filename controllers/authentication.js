@@ -11,6 +11,13 @@ function tokenForUser(user) {
   config.secret)
 };
 
+exports.signin = function(req, res, next) {
+  // providing token to user who's email and password are already auth'd
+  res.send({
+    token: tokenForUser(req.user)
+  });
+}
+
 exports.signup = function(req, res, next) {
   //console.log(req.body);
   const email = req.body.email;
@@ -46,12 +53,4 @@ exports.signup = function(req, res, next) {
     res.json({ token: tokenForUser(user) });
     
   });
-
-  
-
-
-  
-
-
-  
 };
