@@ -40,6 +40,32 @@ label {
   @include content-margins;
 }
 
+.welcome-content {
+  #welcome-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  p {
+    font-family: $headline-font;
+    margin: 10px 0 0 0;
+  }
+}
+
+// ===== SIGN IN/OUT BUTTONS =====
+.sign-up-btn {
+  @include signup-btn-style;
+}
+
+.sign-in-btn {
+  @include signin-btn-style;
+}
+
+.sign-in-btn:hover,
+.sign-up-btn:hover {
+  @include button-hover;
+}
+
 // ===== DEFAULT BUTTONS =====
 .button {
   @include button-style;

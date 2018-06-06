@@ -30,6 +30,9 @@
   color: #B2EBFF;
 }
 
-#logo {
-  width: 75%;
+.navbar-brand {
+  display: block;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
 }

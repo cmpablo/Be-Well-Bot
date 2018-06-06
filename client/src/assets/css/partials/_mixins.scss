@@ -29,19 +29,50 @@
   margin: 20px auto 0 auto;
 }
 
-// ===== DEFAULT BUTTON STYLE =====
+// ===== SUBMIT BUTTON STYLE =====
 @mixin button-style {
   background-color: $btn-color;
   border: none;
-  border-radius: 3px;
+  border-radius: $border-radius;
   color: $btn-text-color;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: $btn-font-size;
-  margin: 10px auto;
+  margin: 20px auto;
   padding: 10px 20px;
   float: right;
+  cursor: pointer;
+  -webkit-transition-duration: $transition-time; /* Safari */
+  transition-duration: $transition-time;
+}
+
+@mixin signup-btn-style {
+  background-color: none;
+  border: 1px solid $btn-color;
+  border-radius: $border-radius;
+  color: $btn-color;
+  text-align: center;
+  text-decoration: none;
+  font-size: $btn-font-size;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  cursor: pointer;
+  -webkit-transition-duration: $transition-time; /* Safari */
+  transition-duration: $transition-time;
+}
+
+@mixin signin-btn-style {
+  background-color: $btn-color;
+  border: none;
+  border-radius: $border-radius;
+  color: $btn-text-color;
+  text-align: center;
+  text-decoration: none;
+  font-size: $btn-font-size;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px 20px;
   cursor: pointer;
   -webkit-transition-duration: $transition-time; /* Safari */
   transition-duration: $transition-time;

@@ -10,7 +10,7 @@ const Navbar = props => (
       <img src={logo} alt='logo' id='logo'/>
     </Link>
     <div>
-      <ul>
+      {/* <ul>
         <li
           className={window.location.pathname === '/login' || window.location.pathname === '/about' ? 'nav-item active' : 'nav-item'
           }>
@@ -25,7 +25,7 @@ const Navbar = props => (
             Sign Up
           </Link>
         </li>
-      </ul>
+      </ul> */}
     </div>
   </nav>
 );

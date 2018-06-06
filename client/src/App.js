@@ -3,28 +3,30 @@ import React from 'react';
 import { BrowserRouter as Router } from "react-router-dom";
 import './App.css';
 import Wrapper from './components/Wrapper';
-import Navbar from './components/Navbar';
-import SubNav from './components/SubNav';
+//import Navbar from './components/Navbar';
+//import SubNav from './components/SubNav';
+import Welcome from './pages/Welcome';
 //import Signup from './pages/Signup';
 //import Login from './pages/Login';
 //import Dashboard from './pages/Dashboard';
 //import Menu from './pages/SessionMenu';
 //import SessionDesc from './pages/SessionDesc';
-import TimedSession from './pages/SessionTimed';
+//import TimedSession from './pages/SessionTimed';
 
 
 const App = () => (
   <Router>
     <div >
-      <Navbar />
-      <SubNav />
+      {/* <Navbar /> */}
+      {/* <SubNav /> */}
        <Wrapper>
+         <Welcome />
           {/* <Signup /> */}
           {/* <Login /> */}
           {/* <Dashboard /> */}
           {/* <Menu /> */}
           {/* <SessionDesc /> */}
-          <TimedSession />
+          {/* <TimedSession /> */}
 
         {/* <Route exact path="/works" component={Works} />
         <Route exact path="/cv" component={Resume} />
