@@ -1,39 +1,27 @@
 import React from 'react';
-// import { BrowserRouter as Router, Route } from "react-router-dom";
-import { BrowserRouter as Router } from "react-router-dom";
-import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import Wrapper from './components/Wrapper';
-//import Navbar from './components/Navbar';
-//import SubNav from './components/SubNav';
 import Welcome from './pages/Welcome';
-//import Signup from './pages/Signup';
-//import Login from './pages/Login';
-//import Dashboard from './pages/Dashboard';
-//import Menu from './pages/SessionMenu';
-//import SessionDesc from './pages/SessionDesc';
-//import TimedSession from './pages/SessionTimed';
-
+import Signup from './pages/Signup';
+import reducers from './reducers';
+// import Login from './pages/Login';
 
 const App = () => (
-  <Router>
-    <div >
-      {/* <Navbar /> */}
-      {/* <SubNav /> */}
-       <Wrapper>
-         <Welcome />
-          {/* <Signup /> */}
-          {/* <Login /> */}
-          {/* <Dashboard /> */}
-          {/* <Menu /> */}
-          {/* <SessionDesc /> */}
-          {/* <TimedSession /> */}
-
-        {/* <Route exact path="/works" component={Works} />
-        <Route exact path="/cv" component={Resume} />
-        <Route exact path="/contact" component={Contact} /> */}
-      </Wrapper>
-    </div>
-  </Router>
-)
+  <Provider store={createStore(reducers, {})}>
+    <Router>
+      <div >
+        <Wrapper>
+          <Switch>
+            <Route path='/' exact component={ Welcome } />
+            <Route path='/signup' component={ Signup } />
+            {/* <Route path='/login' exact component={ Login } /> */}
+          </Switch>
+        </Wrapper>
+      </div>
+    </Router>
+  </Provider>
+);
 
 export default App;

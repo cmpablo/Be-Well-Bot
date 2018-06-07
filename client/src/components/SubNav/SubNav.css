@@ -17,11 +17,10 @@
 
 .subNav li {
   float: left;
-  margin: 4px 20px;
-  
+  margin: 12px 20px;
 }
 
-.subNav li a {
+.subNav li span {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -30,6 +29,6 @@
   color: rgb(209, 239, 250);
 }
 
-.subNav li a:hover {
-  background-color: rgb(73, 152, 179);
+.subNav li span:hover {
+  color: #336C7F;
 }
