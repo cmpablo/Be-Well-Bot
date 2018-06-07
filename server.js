@@ -7,6 +7,7 @@ const morgan = require ('morgan');
 const path = require("path");
 const app = express();
 const router = require ('./routes/router.js');
+const cors = require ('cors');
 
 // ===== db setup =====
 mongoose.connect('mongodb://localhost/auth');
@@ -40,5 +41,6 @@ if (process.env.NODE_ENV === "production") {
 
 // ===== app setup =====
 app.use(morgan('combined')); // logging requests
+app.use(cors());
 app.use(bodyParser.json({ type: '*/*' }));
 router(app);

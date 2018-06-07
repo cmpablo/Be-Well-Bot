@@ -9,9 +9,9 @@ import '../assets/css/style.css';
 import logo from '../assets/images/logo_stacked_dark.png';
 
 
-class Signup extends Component {
+class Signin extends Component {
   onSubmit = (formProps) => {
-    this.props.signup(formProps, () => {
+    this.props.signin(formProps, () => {
       this.props.history.push('/dashboard');
     });
   };
@@ -24,7 +24,7 @@ class Signup extends Component {
         <Link to='/'><img src={logo} alt='be well bot logo' id='welcome-logo' /></Link>
         <br />
         <h3>
-          Sign up
+          Sign In
         </h3>
         <hr />
         <div className='signup-form'>
@@ -65,5 +65,5 @@ function mapStateToProps(state) {
 
 export default compose (
   connect(mapStateToProps, actions),
-  reduxForm({ form: 'signup' })
-)(Signup);
+  reduxForm({ form: 'signin' })
+)(Signin);

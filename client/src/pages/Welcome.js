@@ -14,7 +14,7 @@ class Welcome extends Component {
             A pocket meditation tool to help wipe away the day's stress. Be Well Bot helps you practice meditation whenever and wherever you need it most.
           </p>
           <br />
-          <Link to='/login'><button className='sign-in-btn' id='signInBtn'>Log In</button></Link>
+          <Link to='/signin'><button className='sign-in-btn' id='signInBtn'>Log In</button></Link>
           <Link to='/signup'><button className='sign-up-btn' id='signUpBtn'>Sign Up</button></Link>
         </div>
       </div>
