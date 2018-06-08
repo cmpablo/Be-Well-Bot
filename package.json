@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "start": "./node_modules/.bin/concurrently \"./node_modules/.bin/nodemon\" \"npm run client\"",
     "server": "node server.js",
     "client": "cd client && npm run start",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
