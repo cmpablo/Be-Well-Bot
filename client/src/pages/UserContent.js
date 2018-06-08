@@ -7,6 +7,7 @@ import Navbar from './../components/Navbar';
 import Dashboard from './Dashboard';
 import Menu from './../components/Menu';
 import Signin from './../pages/Signin';
+import Logout from './Logout';
 
 const UserContent = props => (
   <Router>
@@ -16,7 +17,7 @@ const UserContent = props => (
       <Switch>
         <Route path='/dashboard' component={ Dashboard } />
         <Route path='/menu' component={ Menu } />
-        <Route path='/logout' component={ Signin } />
+        <Route path='/logout' component={ Logout } />
       </Switch>
     </div>
   </Router>

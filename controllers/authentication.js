@@ -32,7 +32,7 @@ exports.signup = function(req, res, next) {
     });
   };
 
-  // see if user with given email exist
+  // see if user with given email exists
   User.findOne({ email: email }, function(err, existingUser) {
     if (err) throw err;
     
