@@ -10,7 +10,11 @@ const router = require ('./routes/router.js');
 const cors = require ('cors');
 
 // ===== db setup =====
-mongoose.connect('mongodb://localhost/auth');
+mongoose.connect(
+  process.envMONGODB_URI || 'mongodb://localhost/auth',
+{
+  useMongoClient: true
+});
 
 let connection = mongoose.connection;
 connection.on('connected', function() {
@@ -19,9 +23,9 @@ connection.on('connected', function() {
 
 // ===== server setup =====
 const PORT = process.env.PORT || 3090;
-const server = http.createServer(app);
-server.listen(PORT);
-console.log('Server listening on:', PORT);
+// const server = http.createServer(app);
+// server.listen(PORT);
+// console.log('Server listening on:', PORT);
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
@@ -34,9 +38,9 @@ if (process.env.NODE_ENV === "production") {
 //   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 // });
 
-// app.listen(PORT, function() {
-//   console.log(`🌎 ==> Server now on port ${PORT}!`);
-// });
+app.listen(PORT, function() {
+  console.log(`🌎 ==> Server now on port ${PORT}!`);
+});
 
 
 // ===== app setup =====
