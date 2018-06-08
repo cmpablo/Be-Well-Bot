@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { IndexRoute } from 'react-router';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import reduxThunk from 'redux-thunk';
@@ -28,7 +27,6 @@ const App = () => (
         <Wrapper>
           <Switch>
             <Route path='/' exact component={ Welcome } />
-            <IndexRoute component={ Welcome } />
             <Route path='/signup' component={ Signup } />
             <Route path='/dashboard' component={ UserContent } />
             {/* <Route path='/logout' component={ Logout } /> */}
