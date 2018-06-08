@@ -10,6 +10,10 @@ const router = require ('./routes/router.js');
 const cors = require ('cors');
 const PORT = process.env.PORT || 3090;
 
+//Environmental File
+require('dotenv').config()
+  
+
 // ===== db setup =====
 mongoose.connect(
   process.env.MONGODB_URI || 'mongodb://localhost/auth'
