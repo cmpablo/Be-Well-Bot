@@ -6,11 +6,14 @@ const bcrypt = require('bcrypt-nodejs');
 const userSchema = new Schema({
   email: { type: String, unique: true, lowercase: true, required: true },
   password: { type: String, required: true },
-  logged_sessions: {
-    exercise: { 
-      date: { type: Date, default: Date.now },
-      type: { type:String, lowercase: true }
-  }}
+  sessions:  [
+    { 
+      dateCompleted: Date,
+      sessionType: String,
+      duration: Number,
+      exerciseId: String
+    }
+  ]
 });
 
 // on save hook, encrypt password (runs before user gets saved)

@@ -4,17 +4,19 @@ import Card from '../components/Card';
 
 const Dashboard = () => (
   <div className='container'>
-    <h4>
-      Your Dashboard
-    </h4>
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
-    <Card />
+    <div className='dashboard-content'>
+      <h4>
+        Your Dashboard
+      </h4>
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+      <Card />
+    </div>
   </div>
 );
 

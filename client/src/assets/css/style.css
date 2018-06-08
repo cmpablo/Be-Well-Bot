@@ -91,6 +91,18 @@ label {
   color: #fff;
 }
 
+.auth-form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.email-field,
+.pw-field {
+  width: 300px;
+  margin: 5px;
+}
+
 .button {
   background-color: #336C7F;
   border: none;

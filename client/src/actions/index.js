@@ -18,7 +18,7 @@ export const signup = (formProps, callback) => async dispatch => {
   } catch (e) {
     dispatch({
       type: AUTH_ERROR,
-      payload: 'Email in use'
+      payload: 'Invalid email and/or password'
     })
   }
 };
@@ -36,7 +36,7 @@ export const signin = (formProps, callback) => async dispatch => {
   } catch (e) {
     dispatch({
       type: AUTH_ERROR,
-      payload: 'Invalid credentials'
+      payload: 'Invalid email and/or password'
     })
   }
 };

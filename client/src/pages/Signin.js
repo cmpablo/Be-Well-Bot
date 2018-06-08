@@ -24,28 +24,29 @@ class Signin extends Component {
         <Link to='/'><img src={logo} alt='be well bot logo' id='welcome-logo' /></Link>
         <br />
         <h3>
-          Sign In
+          Welcome back!
         </h3>
-        <hr />
-        <div className='signup-form'>
+        <div className='auth-form'>
           <form onSubmit={handleSubmit(this.onSubmit)}>
             <fieldset>
-              <label>Email</label>
-              <Field
+              {/* <label>Email</label> */}
+              <Field className='email-field'
                 name='email'
                 type='text'
                 component='input'
                 autoComplete='none'
+                placeholder=' email'
               />
             </fieldset>
 
             <fieldset>
-              <label>Password</label>
-              <Field
+              {/* <label>Password</label> */}
+              <Field className='pw-field'
                 name='password'
                 type='password'
                 component='input'
                 autoComplete='none'
+                placeholder=' password'
               />
             </fieldset>
             <div>

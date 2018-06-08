@@ -1,0 +1,19 @@
+.header {
+  background-color: #336C7F;
+  height: 90px;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  border-bottom: 1px solid #336C7F;
+  /* margin: -70px 0 0 0; */
+}
+
+.site-logo {
+  display: flex;
+  justify-content: center;
+}
+
+#logo {
+  margin: 10px 0 0 0;
+}

@@ -27,6 +27,11 @@ const Menu = () => (
         <img src={fifteenMins} alt='15mins' />
       </a>
     </div>
+    <div className='page-nav-btns'>
+        <ul>
+          <li><a href='/'><span className="fas fa-arrow-circle-left"></span> Go Back</a></li>
+        </ul>
+    </div>
   </div>
 );
 

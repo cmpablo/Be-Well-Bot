@@ -1,39 +1,34 @@
 .mainNav {
-  background-color: #336C7F;
-  height: 80px;
-  z-index: 100;
-  box-shadow: 0 1px 2px rgb(41, 55, 59);
-  margin: -70px 0 0 0;
+  background-color: #51ACCC;
+  height: 50px;
+  z-index: 50;
+  position: fixed;
+  top: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .mainNav ul {
   list-style-type: none;
-  margin: 38px 0 0 0;
+  margin: 0;
   padding: 0;
 }
 
 .mainNav li {
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 500;
-  line-height: 1.6;
-  display: inline;
+  float: left;
+  margin: 10px 20px;
 }
 
-.mainNav li a {
-  display: inline;
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  padding: 0 10px;
-  text-decoration: none;
-}
-
-.mainNav li a:hover {
-  color: #B2EBFF;
-}
-
-.navbar-brand {
+.mainNav li span {
   display: block;
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  padding: 0 25px;
+  font-size: 30px;
+  color: rgb(209, 239, 250);
+}
+
+.mainNav li span:hover {
+  color: #336C7F;
 }
