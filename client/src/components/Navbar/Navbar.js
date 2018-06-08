@@ -15,7 +15,7 @@ class Navbar extends Component {
           <li><span className="far fa-smile"></span></li>
           </Link>
           
-          <Link to='/logout'>
+          <Link to='/signin'>
           <li><span className="fas fa-sign-out-alt"></span></li>
           </Link>
         </ul>
