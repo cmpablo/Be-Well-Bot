@@ -7,8 +7,7 @@ let exerciseSchema = new Schema ({
   sessionType: String,
   title: String,
   description: String,
-  guidance: String,
-  icon: String
+  guidance: String
 });
 
 const Exercise = mongoose.model('Exercise', exerciseSchema);

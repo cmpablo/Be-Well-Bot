@@ -1,7 +1,7 @@
 import React from 'react';
 import '../assets/css/style.css';
 
-const SessionDesc = () => (
+const Exercises = () => (
   <div className='container'>
 
     <h4>
@@ -25,4 +25,4 @@ const SessionDesc = () => (
   </div>
 );
 
-export default SessionDesc;
+export default Exercises;
