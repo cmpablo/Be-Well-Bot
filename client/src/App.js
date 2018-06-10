@@ -15,6 +15,7 @@ import Dashboard from './pages/Dashboard';
 import Menu from './components/Menu';
 import Logout from './pages/Logout';
 
+
 const store = createStore(
   reducers,
   {
@@ -26,7 +27,7 @@ const store = createStore(
 const App = () => (
   <Provider store={store}>
     <Router>
-      <div >
+      <div>
         <Header />
         <Navbar />
         <Wrapper>

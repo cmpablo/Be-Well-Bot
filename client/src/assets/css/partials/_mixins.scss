@@ -89,6 +89,8 @@
   background-color: none;
   border: 1px solid $btn-color;
   border-radius: 3px;
+  width: 120px;
+  height: 40px;
   color: $btn-color;
   text-align: center;
   text-decoration: none;
@@ -96,9 +98,25 @@
   justify-content: center;
   font-size: $btn-font-size;
   margin: 15px auto;
-  padding: 10px 30px;
+  padding: 8px 30px;
   cursor: pointer;
 
+}
+
+@mixin timer-btn-disabled {
+  background-color: none;
+  border: 1px solid $btn-disabled-color;
+  border-radius: 3px;
+  width: 120px;
+  height: 40px;
+  color: $btn-disabled-color;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  font-size: $btn-font-size;
+  margin: 15px auto;
+  padding: 8px 30px;
 }
 
 @mixin timer-btn-hover {

@@ -8,7 +8,7 @@ const userSchema = new Schema({
   password: { type: String, required: true },
   sessions:  [
     { 
-      dateCompleted: new Date(Date.now()),
+      //dateCompleted: new Date(Date.now()),
       sessionType: String,
       duration: Number,
       exerciseId: String

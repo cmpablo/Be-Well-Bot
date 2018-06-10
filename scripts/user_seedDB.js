@@ -12,7 +12,8 @@ const userSeed = [
     sessionType: 5,
     duration: 'meditation',
     exerciseId: '5 Minute Meditation'
-  }
+  },
+  
 ];
 
 db.User

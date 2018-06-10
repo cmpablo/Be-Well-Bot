@@ -21,13 +21,14 @@ Everyone has stress in their life. If you say you don't, you're lying. Be Well B
 * HTML
 * Sass/SCSS/CSS
 * Bootstrap
+* [Create React App](https://github.com/facebookincubator/create-react-app).
+
+    * Below you will find some information on how to perform common tasks.<br>You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 * Authentication
     * bcrypt
     * Passport
     * Redux
     * Redux-thunk
     * Axios
-* [Create React App](https://github.com/facebookincubator/create-react-app).
 
-    * Below you will find some information on how to perform common tasks.<br>You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
