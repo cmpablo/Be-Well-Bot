@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/css/style.css';
+import requireAuth from './../components/requireAuth';
 import fiveMins from './../assets/images/min5.png';
 import tenMins from './../assets/images/min10.png';
 import fifteenMins from './../assets/images/min15.png';
@@ -35,4 +36,4 @@ const Menu = () => (
   </div>
 );
 
-export default Menu;
+export default requireAuth(Menu);

@@ -34,7 +34,7 @@ app.use(morgan('combined')); // logging requests
 app.use(cors());
 app.use(bodyParser.json({ type: '*/*' }));
 router(app);
-console.log("Node:",process.env.NODE_ENV);
+//console.log("Node:",process.env.NODE_ENV);
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {

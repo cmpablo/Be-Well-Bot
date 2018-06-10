@@ -1,6 +1,7 @@
 import React from 'react';
 import '../assets/css/style.css';
 import Card from '../components/Card';
+import requireAuth from './../components/requireAuth';
 
 const Dashboard = () => (
   <div className='container'>
@@ -20,4 +21,4 @@ const Dashboard = () => (
   </div>
 );
 
-export default Dashboard;
+export default requireAuth(Dashboard);

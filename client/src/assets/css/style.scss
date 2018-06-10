@@ -6,9 +6,8 @@ body {
   font-family: $text-font;
   color: $body-text-color;
   height: $body-height;
+  margin: $margin-body;
 }
-
-
 
 h1 {
   @include center-text;

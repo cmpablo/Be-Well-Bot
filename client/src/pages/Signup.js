@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import { reduxForm, Field } from 'redux-form';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
 import '../assets/css/style.css';
-import logo from '../assets/images/logo_stacked_dark.png';
+// import logo from '../assets/images/logo_stacked_dark.png';
 
 
 class Signup extends Component {
@@ -21,8 +21,8 @@ class Signup extends Component {
 
     return (
       <div className='container'>
-        <Link to='/'><img src={logo} alt='be well bot logo' id='welcome-logo' /></Link>
-        <br />
+        {/* <Link to='/'><img src={logo} alt='be well bot logo' id='welcome-logo' /></Link>
+        <br /> */}
         <h3>
           Sign Up
         </h3>
@@ -51,8 +51,8 @@ class Signup extends Component {
             </fieldset>
             <div>
               {this.props.errorMessage}
+              <button className='button' id='submitBtn'>Submit</button>
             </div>
-            <button className='button' id='submitBtn'>Submit</button>
           </form>
         </div>
        </div>
