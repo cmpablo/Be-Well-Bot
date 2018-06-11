@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './../../assets/css/style.css';
 
-class FiveTimer extends Component {
+class FifteenTimer extends Component {
   constructor(props) {
     super(props)
     this.state ={
-      time: 5,
+      time: 15,
       isOn: false
     }
     this.startTimer = this.startTimer.bind(this)
@@ -20,7 +20,6 @@ class FiveTimer extends Component {
     this.timer = setInterval(() => this.setState({
       time: this.state.time - 1
     }), 1000)
-    
   }
 
   stopTimer(e) {
@@ -30,7 +29,7 @@ class FiveTimer extends Component {
   }
 
   resetTimer() {
-    this.setState({ time: 5 })
+    this.setState({ time: 15 })
   }
 
   render() {
@@ -51,4 +50,4 @@ class FiveTimer extends Component {
   }
 };
 
-export default FiveTimer;
+export default FifteenTimer;

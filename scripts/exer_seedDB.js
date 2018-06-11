@@ -8,28 +8,52 @@ mongoose.connect(
 
 const exerciseSeed = [
   {
-    exerciseId: '5 min meditation',
+    exerciseId: 'meditation-5min',
     duration: 5,
     sessionType: 'meditation',
     title: '5 Minute Meditation',
-    description: 'Description of the benefits of a 5 Minute Meditation',
-    guidance: 'Find a quiet space. Close your eyes. Take a deep breath through your nose. Breathe out slowing, counting down from 7. Repeat.'
+    description: 'Description of the benefits of meditation',
+    guidance: 'Duis laborum spare ribs exercitation pancetta buffalo t-bone rump brisket sint. Commodo ribeye consequat quis ut. Eiusmod frankfurter officia tongue proident laborum kielbasa minim. Do officia dolore cupim.'
   },
   {
-    exerciseId: '10 min stretch',
+    exerciseId: 'meditation-10min',
     duration: 10,
-    sessionType: 'stretching',
-    title: '10 Minute Quick Stretch',
-    description: 'Description of the benefits of a 10 Minute Stretch',
-    guidance: 'Stand with feet slightly apart, arms outstretched to the sides. In a sweeping motion, raise arms up, then down as you bend at your hips. Hang in this position for two breaths. Slowly stand up. Slowly breathe in, then out.'
+    sessionType: 'meditation',
+    title: '10 Minute Meditation',
+    description: 'Description of the benefits meditation',
+    guidance: 'Meatball cupim tongue, frankfurter ut ham esse minim swine sunt lorem enim ball tip. Prosciutto tongue consequat leberkas pig dolore. Elit tail officia pancetta. Esse excepteur cupim qui hamburger ex fugiat commodo anim meatball cillum. Spare ribs magna do prosciutto, tenderloin veniam laboris strip steak consectetur capicola fatback filet mignon.'
   },
   {
-    exerciseId: '15 min walk',
+    exerciseId: 'meditation-15min',
     duration: 15,
-    sessionType: 'walk',
-    title: '15 Minute Walk',
-    description: 'Description of the benefits of a 15 Minute Walk',
-    guidance: 'Sometimes you just need a change of scenery and get the blood pumping. Go outside. Take a walk around the block or do a few laps in the parking lot. Focus on your breathing and clearing your mind.'
+    sessionType: 'meditation',
+    title: '15 Minute Meditation',
+    description: 'Description of the benefits of meditation',
+    guidance: 'Consequat strip steak consectetur non venison, beef ribs burgdoggen porchetta duis. Ut reprehenderit est shankle do frankfurter ad t-bone enim short loin voluptate qui. Kielbasa ut meatloaf aliquip. Laboris doner sirloin pig, eu aliqua sint veniam turducken pork belly t-bone. Id frankfurter lorem aliquip drumstick magna fatback esse beef ribs cupidatat tail nisi brisket ut.'
+  },
+  {
+    exerciseId: 'yoga-5min',
+    duration: 15,
+    sessionType: 'yoga',
+    title: '5 Minute Yoga',
+    description: 'Description of the benefits of yoga',
+    guidance: 'Flank jowl lorem incididunt eiusmod in. Beef picanha porchetta meatball ea swine. Prosciutto shoulder cillum flank non pork belly ribeye id porchetta short ribs ut andouille.'
+  },
+  {
+    exerciseId: 'yoga-10min',
+    duration: 10,
+    sessionType: 'yoga',
+    title: '10 Minute Yoga',
+    description: 'Description of the benefits of yoga',
+    guidance: 'Cow in chicken, andouille ball tip sausage aliqua. Proident tenderloin commodo pork belly esse frankfurter consectetur short loin bresaola. Rump pork belly proident shankle, magna tenderloin frankfurter sunt.'
+  },
+  {
+    exerciseId: 'yoga-15min',
+    duration: 15,
+    sessionType: 'yoga',
+    title: '15 Minute Yoga',
+    description: 'Description of the benefits yoga',
+    guidance: 'Tongue doner kevin, pork chop landjaeger aute do pork belly. Pork belly officia ut, chuck flank tri-tip ea meatball. Quis buffalo cillum nulla ham hock shankle incididunt. Bresaola laborum sausage anim, non sint shankle nulla. Reprehenderit ut picanha, aliqua consectetur dolor tail ipsum. Cow beef short loin chicken, non kielbasa ex shankle pariatur dolor incididunt pork meatball fatback. Boudin shank ut, nisi cow mollit incididunt jerky irure voluptate alcatra est consequat burgdoggen in. Dolore do pork loin buffalo in ut laboris est sirloin ex.'
   }
 ];
 

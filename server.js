@@ -24,11 +24,6 @@ connection.on('connected', function() {
   console.log('connected to db');
 });
 
-// ===== server setup =====
-// const server = http.createServer(app);
-// server.listen(PORT);
-// console.log('Server listening on:', PORT);
-
 // ===== app setup =====
 app.use(morgan('combined')); // logging requests
 app.use(cors());
@@ -46,6 +41,10 @@ if (process.env.NODE_ENV === "production") {
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
+
+// ===== ROUTES =====
+
+
 
 app.listen(PORT, function() {
   console.log(`🌎 ==> Server now on port ${PORT}!`);

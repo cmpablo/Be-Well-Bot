@@ -4,11 +4,17 @@ const bcrypt = require('bcrypt-nodejs');
 
 // define user model
 const userSchema = new Schema({
-  email: { type: String, unique: true, lowercase: true, required: true },
+  email: { 
+    type: String,
+    unique: true, 
+    lowercase: true,
+    required: true,
+    match: [/.+@.+\..+/, "Please enter a valid e-mail address"]
+  },
   password: { type: String, required: true },
   sessions:  [
     { 
-      //dateCompleted: new Date(Date.now()),
+      dateCompleted: Date,
       sessionType: String,
       duration: Number,
       exerciseId: String

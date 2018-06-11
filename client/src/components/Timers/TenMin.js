@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './../../assets/css/style.css';
 
-class OneMinTimer extends Component {
+class TenTimer extends Component {
   constructor(props) {
     super(props)
     this.state ={
-      time: 60,
+      time: 10,
       isOn: false
     }
     this.startTimer = this.startTimer.bind(this)
@@ -30,7 +30,7 @@ class OneMinTimer extends Component {
   }
 
   resetTimer() {
-    this.setState({ time: 60 })
+    this.setState({ time: 10 })
   }
 
   render() {
@@ -51,4 +51,4 @@ class OneMinTimer extends Component {
   }
 };
 
-export default OneMinTimer;
+export default TenTimer;
