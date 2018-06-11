@@ -5,8 +5,11 @@
   position: fixed;
   top: 90px;
   width: 100%;
-  display: flex;
-  justify-content: center;
+}
+
+.navBtns {
+  width: 300px;
+  margin: 0 auto;
 }
 
 .mainNav ul {
@@ -17,7 +20,7 @@
 
 .mainNav li {
   float: left;
-  margin: 10px 20px;
+  margin: 10px;
 }
 
 .far,

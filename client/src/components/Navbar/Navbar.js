@@ -9,19 +9,21 @@ class Navbar extends Component {
     if (this.props.authenticated) {
       return (
         <div className='mainNav'>
-          <ul>
-            <Link to='/dashboard'>
-            <li><span className="fas fa-list-ul"></span></li>
-            </Link>
+          <div className='navBtns'>
+            <ul>
+              <Link to='/dashboard'>
+              <li><span className="fas fa-list-ul"></span></li>
+              </Link>
 
-            <Link to='/menu'>
-            <li><span className="far fa-smile"></span></li>
-            </Link>
-            
-            <Link to='/logout'>
-            <li><span className="fas fa-sign-out-alt"></span></li>
-            </Link>
-          </ul>
+              <Link to='/menu'>
+              <li><span className="far fa-smile"></span></li>
+              </Link>
+              
+              <Link to='/logout'>
+              <li><span className="fas fa-sign-out-alt"></span></li>
+              </Link>
+            </ul>
+          </div>  
         </div>
       );
     } 
