@@ -11,7 +11,7 @@ const cors = require ('cors');
 const PORT = process.env.PORT || 3090;
 
 //Environmental File
-require('dotenv').config()
+//require('dotenv').config()
 
 // Serve up static assets (usually on heroku)
 if (process.env.NODE_ENV === "production") {
