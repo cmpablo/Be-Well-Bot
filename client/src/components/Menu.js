@@ -10,7 +10,8 @@ const Menu = () => (
     <h4>
       Exercises
     </h4>
-    <h6>Choose a session:</h6>
+    <p>Before choosing a session, make sure you are in a quiet space away from distraction.</p>
+    <h6>Choose a time:</h6>
     <div className='sesh-times'>
       <a href='/'>
         <img src={fiveMins} alt='5mins' />
@@ -27,11 +28,6 @@ const Menu = () => (
       <a href='/'>
         <img src={fifteenMins} alt='15mins' />
       </a>
-    </div>
-    <div className='page-nav-btns'>
-        <ul>
-          <li><a href='/'><span className="fas fa-arrow-circle-left"></span> Go Back</a></li>
-        </ul>
     </div>
   </div>
 );

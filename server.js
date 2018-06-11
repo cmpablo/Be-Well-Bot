@@ -12,7 +12,11 @@ const PORT = process.env.PORT || 3090;
 
 //Environmental File
 require('dotenv').config()
-  
+
+// Serve up static assets (usually on heroku)
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static("client/build"));
+}
 
 // ===== db setup =====
 mongoose.connect(
@@ -30,11 +34,6 @@ app.use(cors());
 app.use(bodyParser.json({ type: '*/*' }));
 router(app);
 //console.log("Node:",process.env.NODE_ENV);
-
-// Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
 
 // ===== Send every request to the React app =====
 // ===== Define any API routes before this runs =====
