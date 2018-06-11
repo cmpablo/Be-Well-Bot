@@ -6,8 +6,6 @@ import { connect } from 'react-redux';
 import * as actions from '../actions';
 
 import '../assets/css/style.css';
-// import logo from '../assets/images/logo_stacked_dark.png';
-
 
 class Signin extends Component {
   onSubmit = (formProps) => {

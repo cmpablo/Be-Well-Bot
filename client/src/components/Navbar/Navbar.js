@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { connect } from 'react-redux';
+import auth from './../../reducers/auth';
 
 class Navbar extends Component {
+
   renderLinks() {
     if (this.props.authenticated) {
       return (
@@ -27,6 +29,7 @@ class Navbar extends Component {
   }
 
   render() {
+    
     return (
       <div className='mainNav'>
         {this.renderLinks()}
