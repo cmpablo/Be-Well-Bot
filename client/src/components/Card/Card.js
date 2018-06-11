@@ -2,10 +2,12 @@ import React from "react";
 //import CardBtn from "../CardBtn";
 import "./Card.css";
 
-const Card = props => (
-  <div className="card">
-    <p><span>06-27-18, 4:30pm</span> - 10 min session</p>
-  </div>
-);
+const Card = (props) => {
+  return (
+    <div className="card">
+      <p>{props.date}, {props.time} - {props.sessionType}</p>
+    </div>
+    )
+};
 
 export default Card;

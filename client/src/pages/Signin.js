@@ -19,8 +19,7 @@ class Signin extends Component {
 
     return (
       <div className='container'>
-        {/* <Link to='/'><img src={logo} alt='be well bot logo' id='welcome-logo' /></Link>
-        <br /> */}
+        
         <h3>
           Welcome back!
         </h3>

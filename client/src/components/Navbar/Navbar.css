@@ -20,7 +20,8 @@
   margin: 10px 20px;
 }
 
-.mainNav li span {
+.far,
+.fas {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -29,6 +30,7 @@
   color: rgb(209, 239, 250);
 }
 
-.mainNav li span:hover {
+.far:hover,
+.fas:hover {
   color: #336C7F;
 }

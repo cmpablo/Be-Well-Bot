@@ -8,10 +8,11 @@ class Welcome extends Component {
     return (
       <div className='container'>
         <div className='welcome-content'>
-          {/* <img src={logo} alt='be well bot logo' id='welcome-logo' />
-          <br /> */}
+        <h3>
+          Hello!
+        </h3>
           <p>
-            A pocket meditation tool to help wipe away the day's stress. Be Well Bot helps you practice meditation whenever and wherever you are.
+            Be Well Bot is a pocket meditation tool that helps guide you through meditation and yoga exercises whenever and wherever you are.
           </p>
           <br />
           <Link to='/signin'><button className='sign-in-btn' id='signInBtn'>Log In</button></Link>
