@@ -10,11 +10,18 @@ Everyone has stress in their life. If you say you don't, you're lying. Be Well B
 
 ### How does it work?
 
-
+After user signs up and/or signs in, they are taken to their dashboard that holds all of their completed meditation or yoga sessions. Users can redo a session from the dashboard or go to the sessions menu (smiley face icon) and then choose a timed session.
 
 ### Screenshots
 
-![alt](path.jpg)
+##### Welcome Screen
+![Welcome Screen](client/src/assets/images/bwb_welcome.png)
+
+##### Dashboard Screen
+![Dashboard Screen](client/src/assets/images/bwb_dashboard.png)
+
+##### Session Timer  Screen
+![Timer Screen](client/src/assets/images/bwb_timer.png)
 
 ### Technologies Applied
 
@@ -30,4 +37,4 @@ Everyone has stress in their life. If you say you don't, you're lying. Be Well B
     * Redux
     * Redux-thunk
     * Axios
-* styled-components
+
