@@ -110,10 +110,9 @@
 
 // ===== SESSION MENU STYLE =====
 @mixin sesh-style {
-  display: block;
-  margin: 30px auto 0 auto;
+  margin: 20px 25px;
 }
 
-@mixin image-hover {
+@mixin btn-hover {
   opacity: $img-hover-opacity;
 }

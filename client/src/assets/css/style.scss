@@ -52,20 +52,6 @@ label {
   margin: 10px 0 0 0;
 }
 
-// ===== SIGN IN/OUT BUTTONS =====
-.sign-up-btn {
-  @include signup-btn-style;
-}
-
-.sign-in-btn {
-  @include signin-btn-style;
-}
-
-.sign-in-btn:hover,
-.sign-up-btn:hover {
-  @include button-hover;
-}
-
 // ===== SIGN IN / SIGN UP PAGES =====
 .auth-form {
   display: flex;
@@ -84,6 +70,90 @@ label {
 }
 
 .button:hover {
+  @include button-hover;
+}
+
+// ===== TIMED SESSION MENU =====
+
+#five-min,
+#ten-min,
+#fifteen-min {
+  display: block;
+  overflow: hidden;
+  h2 {
+    font-family: $text-font;
+    font-size: $menu-num-size;
+    font-weight: $menu-num-weight;
+  }
+  h4 {
+    font-family: $text-font;
+    margin: $menu-text-margin;
+  }
+}
+
+#five-min {
+  h2,
+  h4 {
+    color: $five-min-color;
+  }
+}
+
+#ten-min {
+  h2,
+  h4 {
+    color: $ten-min-color;
+  }
+}
+
+#fifteen-min {
+  h2,
+  h4 {
+    color: $fifteen-min-color;
+  }
+}
+
+#five-min a:hover{
+  @include btn-hover;
+}
+
+// ===== TIMED SESSION STYLE =====
+.sesh-timer {
+  .timerBtns {
+    width: 225px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-family: $text-font;
+    font-size: 100px;
+    font-weight: bold;
+    margin: -20px 0 0 0;
+  }
+  p {
+    font-size: 20px;
+    margin: -20px 0 0 0;
+    text-align: center;
+  }
+}
+
+.exercise-desc {
+  h3 {
+    margin: 0 0 10px 0;
+  }
+}
+
+// ====================================== BUTTONS ======================================
+
+// ===== SIGN IN/OUT BUTTONS =====
+.sign-up-btn {
+  @include signup-btn-style;
+}
+
+.sign-in-btn {
+  @include signin-btn-style;
+}
+
+.sign-in-btn:hover,
+.sign-up-btn:hover {
   @include button-hover;
 }
 
@@ -107,9 +177,9 @@ label {
   @include sesh-style;
 }
 
-.sesh-times:hover {
-  @include image-hover;
-}
+// .sesh-times:hover {
+//   @include btn-hover;
+// }
 
 .sesh-timer hr {
   margin: 30px 0 20px 0;
@@ -144,27 +214,3 @@ label {
   }
 }
 
-// ===== TIMED SESSION STYLE =====
-.sesh-timer {
-  .timerBtns {
-    width: 225px;
-    margin: 0 auto;
-  }
-  h1 {
-    font-family: $text-font;
-    font-size: 100px;
-    font-weight: bold;
-    margin: -20px 0 0 0;
-  }
-  p {
-    font-size: 20px;
-    margin: -20px 0 0 0;
-    text-align: center;
-  }
-}
-
-.exercise-desc {
-  h3 {
-    margin: 0 0 10px 0;
-  }
-}

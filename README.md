@@ -30,5 +30,4 @@ Everyone has stress in their life. If you say you don't, you're lying. Be Well B
     * Redux
     * Redux-thunk
     * Axios
-
-
+* styled-components

@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 import '../assets/css/style.css';
 import Card from '../components/Card';
 import requireAuth from './../components/requireAuth';
+
+const StyledLink = styled(Link)`
+    &:focus, &:hover, &:visited, &:link, &:active {
+        text-decoration: none;
+    }
+`;
 
 class Dashboard extends Component {
   state = {
@@ -25,12 +32,12 @@ class Dashboard extends Component {
           <h4>
             Your Dashboard
           </h4>
-          <Link to='/fivemed'><Card date={sessions[0].date} time={sessions[0].time} type={sessions[0].type}/></Link>
-          <Link to='/tenyoga'><Card date={sessions[1].date} time={sessions[1].time} type={sessions[1].type}/></Link>
-          <Link to='/fivemed'><Card date={sessions[2].date} time={sessions[2].time} type={sessions[2].type}/></Link>
-          <Link to='fiveyoga'><Card date={sessions[3].date} time={sessions[3].time} type={sessions[3].type}/></Link>
-          <Link to='/tenyoga'><Card date={sessions[4].date} time={sessions[4].time} type={sessions[4].type}/></Link>
-          <Link to='/fifteenyoga'><Card date={sessions[5].date} time={sessions[5].time} type={sessions[5].type}/></Link>
+          <StyledLink to='/fivemed'><Card date={sessions[0].date} time={sessions[0].time} type={sessions[0].type}/></StyledLink>
+          <StyledLink to='/tenyoga'><Card date={sessions[1].date} time={sessions[1].time} type={sessions[1].type}/></StyledLink>
+          <StyledLink to='/fivemed'><Card date={sessions[2].date} time={sessions[2].time} type={sessions[2].type}/></StyledLink>
+          <StyledLink to='fiveyoga'><Card date={sessions[3].date} time={sessions[3].time} type={sessions[3].type}/></StyledLink>
+          <StyledLink to='/tenyoga'><Card date={sessions[4].date} time={sessions[4].time} type={sessions[4].type}/></StyledLink>
+          <StyledLink to='/fifteenyoga'><Card date={sessions[5].date} time={sessions[5].time} type={sessions[5].type}/></StyledLink>
         </div>
       </div>
     )

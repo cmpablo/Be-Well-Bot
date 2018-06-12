@@ -52,6 +52,103 @@ label {
   margin: 10px 0 0 0;
 }
 
+.auth-form {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.email-field,
+.pw-field {
+  width: 300px;
+  margin: 5px;
+}
+
+.button {
+  background-color: #336C7F;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 30px 5px;
+  padding: 10px 20px;
+  float: right;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4;
+  /* Safari */
+  transition-duration: 0.4;
+}
+
+.button:hover {
+  background-color: #51ACCC;
+  color: #fff;
+}
+
+#five-min,
+#ten-min,
+#fifteen-min {
+  display: block;
+  overflow: hidden;
+}
+
+#five-min h2,
+#ten-min h2,
+#fifteen-min h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+#five-min h4,
+#ten-min h4,
+#fifteen-min h4 {
+  font-family: "Work Sans", sans-serif;
+  margin: -15px 0 0 0;
+}
+
+#five-min h2,
+#five-min h4 {
+  color: #66D7FF;
+}
+
+#ten-min h2,
+#ten-min h4 {
+  color: #51ACCC;
+}
+
+#fifteen-min h2,
+#fifteen-min h4 {
+  color: #336C7F;
+}
+
+#five-min a:hover {
+  opacity: 0.7;
+}
+
+.sesh-timer .timerBtns {
+  width: 225px;
+  margin: 0 auto;
+}
+
+.sesh-timer h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  margin: -20px 0 0 0;
+}
+
+.sesh-timer p {
+  font-size: 20px;
+  margin: -20px 0 0 0;
+  text-align: center;
+}
+
+.exercise-desc h3 {
+  margin: 0 0 10px 0;
+}
+
 .sign-up-btn {
   background-color: none;
   border: 1px solid #336C7F;
@@ -92,40 +189,6 @@ label {
   color: #fff;
 }
 
-.auth-form {
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-}
-
-.email-field,
-.pw-field {
-  width: 300px;
-  margin: 5px;
-}
-
-.button {
-  background-color: #336C7F;
-  border: none;
-  border-radius: 3px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 30px 5px;
-  padding: 10px 20px;
-  float: right;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4;
-  /* Safari */
-  transition-duration: 0.4;
-}
-
-.button:hover {
-  background-color: #51ACCC;
-  color: #fff;
-}
-
 .timer-btn {
   background-color: none;
   border: 1px solid #336C7F;
@@ -158,12 +221,7 @@ label {
 }
 
 .sesh-times img {
-  display: block;
-  margin: 30px auto 0 auto;
-}
-
-.sesh-times:hover {
-  opacity: 0.7;
+  margin: 20px 25px;
 }
 
 .sesh-timer hr {
@@ -201,27 +259,5 @@ label {
 
 .page-nav-btns li a:hover {
   color: #51ACCC;
-}
-
-.sesh-timer .timerBtns {
-  width: 225px;
-  margin: 0 auto;
-}
-
-.sesh-timer h1 {
-  font-family: "Work Sans", sans-serif;
-  font-size: 100px;
-  font-weight: bold;
-  margin: -20px 0 0 0;
-}
-
-.sesh-timer p {
-  font-size: 20px;
-  margin: -20px 0 0 0;
-  text-align: center;
-}
-
-.exercise-desc h3 {
-  margin: 0 0 10px 0;
 }
 /*# sourceMappingURL=style.css.map */

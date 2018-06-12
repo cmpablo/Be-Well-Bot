@@ -10,24 +10,32 @@ const Menu = () => (
     <h4>
       Exercises
     </h4>
-    <p>Before choosing a session, make sure you are in a quiet space away from distraction.</p>
+    <p>Before choosing a session, find a quiet space away from distraction with room to stretch.</p>
     <h6>Choose a time:</h6>
-    <div className='sesh-times'>
-      <a href='/'>
-        <img src={fiveMins} alt='5mins' />
-      </a>
-    </div>
-
-    <div className='sesh-times'>
-      <a href='/'>
-        <img src={tenMins} alt='10mins' />
-      </a>
-    </div>
-
-      <div className='sesh-times'>
-      <a href='/'>
-        <img src={fifteenMins} alt='15mins' />
-      </a>
+    <div className='row sesh-times'>
+      <div className='col-'>
+        <a href='/fiveyoga' id='five-min'>
+          {/* <h2>5</h2>
+          <h4>min</h4> */}
+          <img src={fiveMins} alt='5mins' />
+        </a>
+      </div> 
+      
+      <div className='col-'>
+        <a href='/tenmed' id='ten-min'>
+          {/* <h2>10</h2>
+          <h4>min</h4> */}
+          <img src={tenMins} alt='10mins' />
+        </a>
+      </div>
+      
+      <div className='col-'>
+        <a href='/fifteenyoga' id='fifteen-min'>
+          {/* <h2>15</h2>
+          <h4>min</h4> */}
+          <img src={fifteenMins} alt='15mins' />
+        </a>
+      </div>
     </div>
   </div>
 );
