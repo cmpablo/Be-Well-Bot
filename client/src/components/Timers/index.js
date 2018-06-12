@@ -1,2 +1,5 @@
-export { default } from "./FiveMin";
-export { default } from "./OneMin";
+export { default } from "./FiveMinMed";
+export { default } from "./FiveMinYoga";
+export { default } from "./TenMinMed";
+export { default } from "./TenMinYoga";
+export { default } from "./FifteenMinYoga";

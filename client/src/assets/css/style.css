@@ -3,7 +3,7 @@
 body {
   font-family: "Work Sans", sans-serif;
   color: #336C7F;
-  height: 600px;
+  height: 100%;
   margin: 175px 0 0 0;
 }
 
@@ -130,42 +130,30 @@ label {
   background-color: none;
   border: 1px solid #336C7F;
   border-radius: 3px;
-  width: 120px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   color: #336C7F;
   text-align: center;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  font-size: 16px;
-  margin: 15px auto;
-  padding: 8px 30px;
+  margin: 15px 12px 0 12px;
+  padding: 0 5px 0 10px;
   cursor: pointer;
 }
 
-.timer-btn span {
-  font-size: 18px;
+.timer-btn .far,
+.timer-btn .fas {
+  font-size: 30px;
+  color: #336C7F;
   padding: 2px 5px 0 0;
-}
-
-.timer-btn-disabled {
-  background-color: none;
-  border: 1px solid #757575;
-  border-radius: 3px;
-  width: 120px;
-  height: 40px;
-  color: #757575;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  font-size: 16px;
-  margin: 15px auto;
-  padding: 8px 30px;
 }
 
 .timer-btn:hover {
   background-color: #51ACCC;
+  color: #fff;
+}
+
+.timer-btn:hover .far,
+.timer-btn:hover .fas {
   color: #fff;
 }
 
@@ -213,6 +201,11 @@ label {
 
 .page-nav-btns li a:hover {
   color: #51ACCC;
+}
+
+.sesh-timer .timerBtns {
+  width: 225px;
+  margin: 0 auto;
 }
 
 .sesh-timer h1 {

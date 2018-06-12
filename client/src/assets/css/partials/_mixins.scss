@@ -89,39 +89,23 @@
   background-color: none;
   border: 1px solid $btn-color;
   border-radius: 3px;
-  width: 120px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   color: $btn-color;
   text-align: center;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  font-size: $btn-font-size;
-  margin: 15px auto;
-  padding: 8px 30px;
+  margin: 15px 12px 0 12px;
+  padding: 0 5px 0 10px;
   cursor: pointer;
-
-}
-
-@mixin timer-btn-disabled {
-  background-color: none;
-  border: 1px solid $btn-disabled-color;
-  border-radius: 3px;
-  width: 120px;
-  height: 40px;
-  color: $btn-disabled-color;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  font-size: $btn-font-size;
-  margin: 15px auto;
-  padding: 8px 30px;
 }
 
 @mixin timer-btn-hover {
   background-color: $btn-hover-color;
   color: $btn-text-color;
+  .far,
+  .fas {
+    color: $btn-text-color;
+  }
 }
 
 // ===== SESSION MENU STYLE =====

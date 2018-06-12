@@ -90,14 +90,12 @@ label {
 //===== TIMER BUTTON =====
 .timer-btn {
   @include timer-btn-style;
-  span {
-    font-size: $default-font-size;
+  .far,
+  .fas {
+    font-size: $icon-btn-size;
+    color: $btn-color;
     padding: 2px 5px 0 0;
   }
-}
-
-.timer-btn-disabled {
-  @include timer-btn-disabled;
 }
 
 .timer-btn:hover {
@@ -148,6 +146,10 @@ label {
 
 // ===== TIMED SESSION STYLE =====
 .sesh-timer {
+  .timerBtns {
+    width: 225px;
+    margin: 0 auto;
+  }
   h1 {
     font-family: $text-font;
     font-size: 100px;

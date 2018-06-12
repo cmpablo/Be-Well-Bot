@@ -23,8 +23,8 @@
   margin: 10px;
 }
 
-.far,
-.fas {
+.navBtns .far,
+.navBtns .fas {
   display: block;
   text-align: center;
   text-decoration: none;

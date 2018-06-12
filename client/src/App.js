@@ -15,6 +15,12 @@ import Dashboard from './pages/Dashboard';
 import Menu from './components/Menu';
 import Logout from './pages/Logout';
 
+import FiveMinMed from './components/Timers/FiveMinMed';
+import FiveMinYoga from './components/Timers/FiveMinYoga';
+import TenMinMed from './components/Timers/TenMinMed';
+import TenMinYoga from './components/Timers/TenMinYoga';
+import FifteenMinYoga from './components/Timers/FifteenMinYoga';
+
 
 const store = createStore(
   reducers,
@@ -38,6 +44,11 @@ const App = () => (
             <Route path='/menu' component={ Menu } />
             <Route path='/logout' component={ Logout } />
             <Route path='/signin' component={ Signin } />
+            <Route path='/fivemed' component={ FiveMinMed } />
+            <Route path='/fiveyoga' component={ FiveMinYoga } />
+            <Route path='/tenmed' component={ TenMinMed } />
+            <Route path='/tenyoga' component={ TenMinYoga } />
+            <Route path='/fifteenyoga' component={ FifteenMinYoga } />
           </Switch>
         </Wrapper>
       </div>
